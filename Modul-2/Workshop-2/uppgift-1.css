@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: azure;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header, footer, main, nav {
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: lime;
+}
+
+header, footer {
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+nav {
+    width: 23%;
+    min-height: 600px;
+}
+
+main {
+    width: 76%;
+    min-height: 600px;
+}

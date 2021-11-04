@@ -1,0 +1,86 @@
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 1.5rem;
+}
+
+h1, h2 {
+  font-weight: bold;
+  color: slateblue;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a {
+  color: rgb(30, 144, 255);
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.ingredients {
+  background-color: #E6E6FA;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.ingredients h2, .instructions h2 {
+  margin-top: 0;
+}
+
+.ingredients ul, .instructions ul {
+  margin-bottom: 0;
+}
+
+img {
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+.instructions {
+  border: 2px solid #E6E6FA;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.left-column {
+  
+  width: 40%;
+}
+
+.right-column {
+  
+  width: 60%;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
+
+main {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid silver;
+  padding: 1rem;
+}

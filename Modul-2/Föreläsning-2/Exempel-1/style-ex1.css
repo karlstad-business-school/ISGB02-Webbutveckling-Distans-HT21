@@ -1,0 +1,16 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1,h2 {
+    font-weight: bold;
+    color: slateblue;
+}
+
+a {
+    color: rgb(30,144,255);
+}
+
+.ingridients {
+    background-color: #E6E6FA;
+}
