@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title>Kodexempel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		fieldset {
+			width: 300px;
+		}
+	</style>
+	
+  </head>
+  <body>
+   
+	
+	<form>
+		<fieldset>
+			<legend>Fyll i allt ! ! !</legend>
+			<label for="txtnamn">Förnamn:</label>
+			<input type="text" id="txtnamn" name="fornamn">
+			<br>
+			<label for="txtenamn">Efternamn:</label>
+			<input type="text" id="txtenamn" name="efternamn">
+			<br><br>
+			<label for="skostorlek">Skostorlek: (Välj 38)</label>
+			<br>
+			<select name="skostorlek" id="skostorlek">
+				<option value="36">Storlek 36</option>
+				<option value="37">Storlek 37</option>
+				<option value="38">Storlek 38</option>
+			</select>
+						<br>
+			<label for="tal">Skriv ett tal mellan 100 och 103:</label>
+			<input type="text" id="txttal" name="tal">
+			<br>
+			<br>
+			<button>Spara ! ! !</button>
+		
+		</fieldset>
+	</form>
+	<script src="script.js"></script>
+  </body>
+</html>
