@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      .lead {
+        font-weight: bold;
+      }
+      .picture {
+        float: right;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Rubrik</h1>
+    <img src="kitten.jpg" alt="Katt med gröna ögon" id="kitten" class="picture" width="256" height="226">
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere culpa fugiat magni soluta, illum sit, fugit sapiente quo! Dolorum numquam, labore quasi nam assumenda ex omnis quam distinctio deserunt laboriosam facere, eaque libero architecto. Doloremque earum, amet cumque vero voluptate!</p>
+    <p>Sapiente voluptatum soluta inventore nemo atque, illum hic fugit veniam culpa vero, dolorum, consequatur incidunt reiciendis porro. Magnam dolor aliquam inventore quasi ab ullam sit vel fugit, nulla similique! Rem nesciunt, doloremque perspiciatis earum corrupti quo explicabo nisi autem dolor?</p>
+    <script type="text/javascript">
+      "use strict";
+
+      var element = document.querySelector('#kitten');
+      if(element.getAttribute('src')==='kitten.jpg') {
+        element.setAttribute('src','lion.jpg');
+        element.setAttribute('alt','Lejon som sover');
+      }
+
+      var para = document.querySelector('.lead');
+      para.innerHTML = 'Ny <b>text</b>....';
+
+
+
+    </script>
+  </body>
+</html>
