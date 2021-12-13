@@ -3,6 +3,11 @@ local<!DOCTYPE html>
     <head>
         <meta charset="utf-8">
         <title>PHP W6</title>
+
+        <!-- 9. -->
+        <style>
+            img { height: 20%; widht: 20%; }
+        </style>
     </head>
 
     <body>
@@ -23,7 +28,7 @@ local<!DOCTYPE html>
                     1. Slumpa ett tal mellan 1 och 6 och skriv ut resultatet.
                         se rand() funktionen på https://www.php.net/manual/en/function.rand.php
                     2. Skriv ut resultatet från punkt 1 i ett p-element.
-                    3. Med iteration slumpa 6 tal mellan 1 och 6 och skriv ut resultatet.
+                    3. Med iteration (for) slumpa 6 tal mellan 1 och 6 och skriv ut resultatet.
                     4. Skriv ut resultatet från punkt 3 i ett div-element och varje framslumpat tal i 
                         ett eget p-element.
                     5. Summera alla framslumpade tal och skriv ut summan i ett eget p-element.
@@ -32,6 +37,8 @@ local<!DOCTYPE html>
                     7. Om tid finns! Skapa använd instruktionerna ovan för img-element och skapa en vektor där varje img-element
                         finns i ett eget index. Revidera sedan punkt 6 och använd vektorn och ett framslupat värde (=vektorindex)
                         för att skriva ut img-element instruktionerna.
+                    8. Gör om punkt 3 och 4 med med while och do while iteration.
+                    9. Använd CSS för att minska bilderna till en storlek där alla tre tärningar visas på samma rad.
                     
                 */
 
@@ -125,6 +132,24 @@ local<!DOCTYPE html>
                     echo($bilder[$rnd]) . PHP_EOL;
                 }
                 echo("</div>");
+
+                //8.
+                $i = 0;
+                echo("<div>");
+                while($i < 6) {
+                    echo("<p>$i: " . rand(1, 6) . "</p>");
+                    $i++;
+                }
+                echo("</div>");
+
+                $i = 0;
+                echo("<div>");
+                do {
+                    echo("<p>$i: " . rand(1, 6) . "</p>");
+                    $i++;
+                } while($i < 6);
+                echo("</div>");
+
             ?>
                
         </main>
